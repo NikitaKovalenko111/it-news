@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import './styles/style.sass'
+import News from './components/News/News'
+import { Space } from 'antd'
+import Paginator from './components/Paginator/Paginator'
+import Wrapper from './components/Wrapper/Wrapper'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+          <Space direction='vertical' size="middle" style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            margin: '10px'
+              
+          }}>
+            <Wrapper />
+            <Routes>
+              <Route index element={<News />} />
+            </Routes>
+            <Paginator />
+          </Space>
+      </BrowserRouter>
     </div>
   );
 }
