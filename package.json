@@ -2,6 +2,7 @@
   "name": "it-news",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nikitakovalenko111.github.io/it-news",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
@@ -34,7 +35,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +59,7 @@
   },
   "devDependencies": {
     "@redux-devtools/extension": "^3.2.5",
-    "redux-devtools-extension": "^2.13.9"
+    "redux-devtools-extension": "^2.13.9",
+    "gh-pages": "^5.0.0"
   }
 }
