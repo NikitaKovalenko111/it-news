@@ -2,7 +2,6 @@
   "name": "it-news",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nikitakovalenko111.github.io/it-news",
   "dependencies": {
     "antd": "^5.5.0",
     "axios": "^1.4.0",
