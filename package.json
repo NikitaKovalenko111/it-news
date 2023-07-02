@@ -4,16 +4,6 @@
   "private": true,
   "homepage": "https://nikitakovalenko111.github.io/it-news",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.5",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/antd": "^1.0.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.25",
-    "@types/react": "^18.2.5",
-    "@types/react-dom": "^18.2.3",
-    "@types/react-redux": "^7.1.25",
     "antd": "^5.5.0",
     "axios": "^1.4.0",
     "classnames": "^2.3.2",
@@ -60,6 +50,15 @@
   "devDependencies": {
     "@redux-devtools/extension": "^3.2.5",
     "redux-devtools-extension": "^2.13.9",
-    "gh-pages": "^5.0.0"
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/antd": "^1.0.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.25",
+    "@types/react": "^18.2.5",
+    "@types/react-dom": "^18.2.3",
+    "@types/react-redux": "^7.1.25"
   }
 }
